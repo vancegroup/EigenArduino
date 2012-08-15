@@ -6,7 +6,16 @@
 //#define EIGEN_IO_H
 
 // Add an error define it expects
-#define ENOMEM 12
+//#define ENOMEM 12
+
+// Disable debug asserts.
+#define EIGEN_NO_DEBUG 1
+
+// No existing ABI, so don't bother aligning
+#define EIGEN_MALLOC_ALREADY_ALIGNED 1
+
+// Hint to number of registers
+#define EIGEN_ARCH_DEFAULT_NUMBER_OF_REGISTERS 16
 
 #ifdef A0
 # define NEED_A0_RESTORED A0
