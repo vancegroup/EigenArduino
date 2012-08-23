@@ -34,8 +34,10 @@
 # undef B1
 #endif
 
-
+// Not sure why just the forward declarations in uClibc++ are insufficient.
 #include <sstream>
+
+// Include Eigen's Core
 #include <Eigen/Core>
 
 #ifdef NEED_A0_RESTORED
@@ -54,4 +56,3 @@
 # define B1 NEED_B1_RESTORED
 # undef NEED_B1_RESTORED
 #endif
-
