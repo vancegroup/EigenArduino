@@ -137,7 +137,7 @@
 
 // MSVC for windows mobile does not have the errno.h file
 // AVR-LibC has one, but it's not useful for what we use it for.
-#if !(defined(_MSC_VER) && defined(_WIN32_WCE)) && !defined(__AVR__)
+#if !(defined(_MSC_VER) && defined(_WIN32_WCE))  && !defined(__AVR__) && !defined(__ARMCC_VERSION)
 #define EIGEN_HAS_ERRNO
 #endif
 
