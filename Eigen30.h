@@ -34,6 +34,9 @@
 # undef B1
 #endif
 
+namespace std {
+	struct nothrow_t;
+}
 
 // Include Eigen's Core
 #include <Eigen/Core>
