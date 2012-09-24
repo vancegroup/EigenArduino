@@ -34,8 +34,6 @@
 # undef B1
 #endif
 
-// Not sure why just the forward declarations in uClibc++ are insufficient.
-#include <sstream>
 
 // Include Eigen's Core
 #include <Eigen/Core>
