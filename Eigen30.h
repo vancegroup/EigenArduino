@@ -12,7 +12,7 @@
 #define EIGEN_NO_DEBUG 1
 
 // No existing ABI, so don't bother aligning
-#define EIGEN_MALLOC_ALREADY_ALIGNED 1
+//#define EIGEN_MALLOC_ALREADY_ALIGNED 1
 
 // Hint to number of registers
 #define EIGEN_ARCH_DEFAULT_NUMBER_OF_REGISTERS 16
