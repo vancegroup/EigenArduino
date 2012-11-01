@@ -20,11 +20,15 @@ Thus, Eigen for Arduino/AVR. Yes, it works, and it's lovely.
 
 Details
 -------
-This branch (`Eigen30`) contains a lightly-modified version of Eigen
-3.0.6. Importantly, it includes a header to both indicate to the Arduino
-IDE that this library should be used, and set up the preprocessor
-environment so the ample `#define` lines in the Arduino and AVR
-libraries don't wreak havoc with Eigen.
+This branch (`Eigen31`) contains a lightly-modified version of Eigen
+3.1's development post-3.1.1 ([revision 5c328ab64][upstreamcommit] in
+the [Eigen git mirror][eigengit]). Importantly, it includes a header to
+both indicate to the Arduino IDE that this library should be used, and
+set up the preprocessor environment so the ample `#define` lines in the
+Arduino and AVR libraries don't wreak havoc with Eigen.
+
+[upstreamcommit]: https://github.com/vancegroup-mirrors/eigen/commit/5c328ab643d76bac17c91480c58127baab740235
+[eigengit]: https://github.com/vancegroup-mirrors/eigen
 
 General Usage
 -------------
@@ -88,7 +92,7 @@ and this library, **in that order**. For example:
 
 ```c++
 #include <stlport.h>
-#include <Eigen30.h>
+#include <Eigen31.h>
 ```
 
 ### Carry on
@@ -133,10 +137,7 @@ these terms:
 Alternately, at your option, it may be used according to the license of
 the Eigen version that it accompanies.
 
-The 3.0 branch of Eigen is licensed under the LGPL3+ or GPL2+ at your
-option. The developers' interpretation, with support from the FSF,
-can be found here:
-<http://eigen.tuxfamily.org/index.php?title=Licensing_FAQ&oldid=1117>
-(Version 3.1.1 and newer have switch to the MPL v2 which better
-expresses the developers' intent.)
-
+The 3.1 and default branches of Eigen starting with 3.1.1 are licensed
+under the MPL2, which the developers describe as "a simple weak copyleft
+license". See the included `COPYING.README` preserved from the upstream
+Eigen distribution for licensing details.
