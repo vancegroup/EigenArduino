@@ -21,9 +21,8 @@ Thus, Eigen for Arduino/AVR. Yes, it works, and it's lovely.
 Details
 -------
 This branch (`Eigen30`) contains a lightly-modified version of Eigen
-3.0.5 with further changesets from upstream version control applied.
-Importantly, it includes a header to both indicate to the Arduino IDE
-that this library should be used, and set up the preprocessor
+3.0.6. Importantly, it includes a header to both indicate to the Arduino
+IDE that this library should be used, and set up the preprocessor
 environment so the ample `#define` lines in the Arduino and AVR
 libraries don't wreak havoc with Eigen.
 
