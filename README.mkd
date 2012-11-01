@@ -34,7 +34,7 @@ General Usage
 -------------
 The avr-gcc toolchain, while capable of compiling C++, doesn't include a
 C++ standard library implementation. Thus, you'll have to provide your
-own. I've worked with the following two:
+own. I've worked with the following two. (**TL; DR: Use stlport-avr**)
 
 - [stlport-avr][] - This is what is most frequently used/tested with
     EigenArduino: it's based on a complete, widely-used,
