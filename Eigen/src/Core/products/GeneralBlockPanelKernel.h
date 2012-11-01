@@ -39,7 +39,13 @@ inline std::ptrdiff_t manage_caching_sizes_second_if_negative(std::ptrdiff_t a, 
 inline void manage_caching_sizes(Action action, std::ptrdiff_t* l1=0, std::ptrdiff_t* l2=0)
 {
   static std::ptrdiff_t m_l1CacheSize = manage_caching_sizes_second_if_negative(queryL1CacheSize(),8 * 1024);
-  static std::ptrdiff_t m_l2CacheSize = manage_caching_sizes_second_if_negative(queryTopLevelCacheSize(),1*1024*1024);
+  static std::ptrdiff_t m_l2CacheSize = manage_caching_sizes_second_if_negative(queryTopLevelCacheSize(),
+#ifdef __AVR__
+  8 * 1024 // Uninformed guess - just know that ptrdiff_t is 16-bits on AVR.
+#else
+  1*1024*1024
+#endif
+  );
 
   if(action==SetAction)
   {
