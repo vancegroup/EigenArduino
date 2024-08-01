@@ -1,7 +1,27 @@
 Eigen for Embedded Use
 ======================
-Maintained at <https://github.com/vancegroup/EigenArduino> by [Ryan
-Pavlik][] - <rpavlik@iastate.edu> <rpavlik@acm.org>
+
+Homepage: <https://github.com/vancegroup/EigenArduino>
+Porting by: [Rylie Pavlik][] - <rylie@ryliepavlik.com>
+
+Project Status
+--------------
+
+This is worthwhile work, and worked when I (Rylie) last used it.
+However, it is based on an old version of Eigen, and the Arduino ecosystem
+has also advanced.
+If you need this capability, I recommend starting with a newer version of Eigen and,
+using the commits in this repo as a guide, patch it (and a 
+[subset of libc++](https://github.com/rpavlik/libcxx-avr) if required)
+*yourself* to work with your toolchain.
+
+I have moved on, no longer use this,
+and regretfully have no capacity to meaningfully maintain or support it.
+
+**Unmaintained**
+
+Intro
+-----
 
 The [Eigen][] C++ template matrix/vector math library is great: simple
 syntax, that through the power of expression templates, compiles to code
@@ -15,7 +35,7 @@ on the desktop.
 
 Thus, Eigen for Arduino/AVR. Yes, it works, and it's lovely.
 
-[Ryan Pavlik]: http://academic.cleardefinition.com/ "Ryan A. Pavlik's academic homepage and blog"
+[Rylie Pavlik]: http://ryliepavlik.com
 [Eigen]: http://eigen.tuxfamily.org/ "Eigen matrix and vector math template library"
 
 Details
@@ -96,27 +116,6 @@ The compatibility header has included `<Eigen/Core>` for you. Enjoy the
 functionality. You may now also include any of the other Eigen headers
 using the same way you'd include them in a standard desktop system:
 `<Eigen/Geometry>`, etc.
-
-### Let us know how it works!
-
-If you find this useful, we would appreciate hearing from you. If you
-use this for academic work, we would also appreciate a copy of the
-publication and a citation: this helps make a case for our work. You may
-contact the main developer, Ryan Pavlik (Iowa State University), by
-email at <rpavlik@iastate.edu> or <abiryan@ryand.net>, or his advisor,
-Dr. Judy M. Vance.
-
-Paper materials and copies of publications may be mailed to:
-
-> Ryan Pavlik or Dr. Judy M. Vance
->
-> Virtual Reality Applications Center
->
-> 1620 Howe Hall
->
-> Ames, Iowa 50011-2274
->
-> USA
 
 
 Licenses
